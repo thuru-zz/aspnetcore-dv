@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<layerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="d63439a7-3979-4f34-97f5-0e2eb7bc3531" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/LayerDesigner">
+  <layers>
+    <layer Id="2f810810-57b8-4057-b6fb-2f4899fba8e9" name="LayeredProject">
+      <dependencyToLayers>
+        <dependencyFromLayerToLayer Id="bd53837b-2bae-4ce7-b933-e1c7e864f47f" direction="Forward">
+          <layerMoniker Id="9e34b0a0-b5d4-46fb-8d57-8e24d3d535f8" />
+        </dependencyFromLayerToLayer>
+        <dependencyFromLayerToLayer Id="8cccf6bd-973a-461f-8ca7-fa3a1f672fc3" direction="Forward">
+          <layerMoniker Id="d89e7574-6a4e-4f1c-a335-ac766875ea72" />
+        </dependencyFromLayerToLayer>
+      </dependencyToLayers>
+      <references>
+        <reference Id="deb350d2-ae0b-4120-ae48-5374215628ad" name="LayeredProject">
+          <ArtifactNode Label="LayeredProject" Category="CodeSchema_Project" Id="(Assembly=&quot;$(DesktopUri)/Temp/DV/LayeredProject/LayeredProject/LayeredProject.csproj&quot;)">
+            <Category Ref="File" />
+          </ArtifactNode>
+          <ExpandedNode Id="(Assembly=LayeredProject)" Label="LayeredProject.exe" Category="CodeSchema_Assembly">
+            <Category Ref="FileSystem.Category.FileOfType.exe" />
+            <LinkCategory Ref="Produces" />
+            <LinkCategory Ref="Represents" />
+          </ExpandedNode>
+        </reference>
+      </references>
+    </layer>
+    <layer Id="d89e7574-6a4e-4f1c-a335-ac766875ea72" name="LayeredProject.Models">
+      <references>
+        <reference Id="b94ce558-20e9-4993-9e28-b42113adc437" name="LayeredProject.Models">
+          <ArtifactNode Label="LayeredProject.Models" Category="CodeSchema_Project" Id="(Assembly=&quot;$(DesktopUri)/Temp/DV/LayeredProject/LayeredProject.Models/LayeredProject.Models.csproj&quot;)">
+            <Category Ref="File" />
+          </ArtifactNode>
+          <ExpandedNode Id="(Assembly=LayeredProject.Models)" Label="LayeredProject.Models.dll" Category="CodeSchema_Assembly">
+            <Category Ref="FileSystem.Category.FileOfType.dll" />
+            <LinkCategory Ref="Produces" />
+            <LinkCategory Ref="Represents" />
+          </ExpandedNode>
+        </reference>
+      </references>
+    </layer>
+    <layer Id="9e34b0a0-b5d4-46fb-8d57-8e24d3d535f8" name="LayeredProject.Services">
+      <dependencyToLayers>
+        <dependencyFromLayerToLayer Id="5770b4ee-f593-4997-b4c4-9ef1dac9b4f5" direction="Forward">
+          <layerMoniker Id="05e3aed5-083f-42b0-823b-ecff7cb7fda5" />
+        </dependencyFromLayerToLayer>
+        <dependencyFromLayerToLayer Id="cc6c67e4-f99b-4fad-94d0-7f8ec5d728af" direction="Forward">
+          <layerMoniker Id="d89e7574-6a4e-4f1c-a335-ac766875ea72" />
+        </dependencyFromLayerToLayer>
+      </dependencyToLayers>
+      <references>
+        <reference Id="4ced0f39-de08-4dde-b4da-58dddffec8e1" name="LayeredProject.Services">
+          <ArtifactNode Label="LayeredProject.Services" Category="CodeSchema_Project" Id="(Assembly=&quot;$(DesktopUri)/Temp/DV/LayeredProject/LayeredProject.Services/LayeredProject.Services.csproj&quot;)">
+            <Category Ref="File" />
+          </ArtifactNode>
+          <ExpandedNode Id="(Assembly=LayeredProject.Services)" Label="LayeredProject.Services.dll" Category="CodeSchema_Assembly">
+            <Category Ref="FileSystem.Category.FileOfType.dll" />
+            <LinkCategory Ref="Produces" />
+            <LinkCategory Ref="Represents" />
+          </ExpandedNode>
+        </reference>
+      </references>
+    </layer>
+    <layer Id="05e3aed5-083f-42b0-823b-ecff7cb7fda5" name="LayeredProject.DataContext">
+      <dependencyToLayers>
+        <dependencyFromLayerToLayer Id="3fe4217c-c0f3-42ec-ac7f-fde421fd2c9b" direction="Forward">
+          <layerMoniker Id="d89e7574-6a4e-4f1c-a335-ac766875ea72" />
+        </dependencyFromLayerToLayer>
+      </dependencyToLayers>
+      <references>
+        <reference Id="f1c8a0a5-3545-4803-a30a-125aaaaa5397" name="LayeredProject.DataContext">
+          <ArtifactNode Label="LayeredProject.DataContext" Category="CodeSchema_Project" Id="(Assembly=&quot;$(DesktopUri)/Temp/DV/LayeredProject/LayeredProject.DataContext/LayeredProject.DataContext.csproj&quot;)">
+            <Category Ref="File" />
+          </ArtifactNode>
+          <ExpandedNode Id="(Assembly=LayeredProject.DataContext)" Label="LayeredProject.DataContext.dll" Category="CodeSchema_Assembly">
+            <Category Ref="FileSystem.Category.FileOfType.dll" />
+            <LinkCategory Ref="Produces" />
+            <LinkCategory Ref="Represents" />
+          </ExpandedNode>
+        </reference>
+      </references>
+    </layer>
+  </layers>
+</layerModel>
