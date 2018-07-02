@@ -30,9 +30,8 @@ namespace LayeredProject
             // This is right
             services.AddSingleton<IProductService, ProductService>();
 
-            // This will fail - you can see the error in Output window under the Build tab
-            // The error tab does not show this, and no red squiggly :(
-            // uncomment this line to make the build success
+            // This will fail the build
+            // squiggly and the error list output are not consistence.
             services.AddSingleton<IMyDbContext, MyDbContext>();
         }
 
